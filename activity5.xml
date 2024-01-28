@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity6">
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="97dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:text="Sign in"
+        android:textColor="#0B3151"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/outlinedTextField"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="110dp"
+        android:layout_height="23dp"
+        android:drawableLeft="@drawable/email"
+        android:text="E-mail"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="87dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:enabled="true"
+        android:hint="example@gmail.com"
+        app:boxStrokeColor="?attr/colorOnSurface"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="110dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="305dp"
+            android:layout_height="50dp"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="120dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="117dp"
+        android:layout_height="27dp"
+        android:drawableLeft="@drawable/lock"
+        android:text="Password"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/outlinedTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="310dp"
+        android:layout_height="60dp"
+        android:enabled="true"
+        android:hint="... ... ... ..."
+        app:boxStrokeColor="?attr/colorOnSurface"
+        app:boxStrokeWidth="1dp"
+        app:boxStrokeWidthFocused="2dp"
+        app:shapeAppearance="?attr/shapeAppearanceSmallComponent"
+        app:endIconMode="END_ICON_NONE"
+        app:endIconTint="@color/black"
+        app:endIconDrawable="null"
+        app:endIconContentDescription="null"
+        app:endIconCheckable="true"
+        app:errorIconDrawable="@drawable/lb_ic_more"
+        app:errorIconTint="?attr/colorError"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="195dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="305dp"
+            android:layout_height="50dp"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="120dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/remember_me"
+        android:layout_width="143dp"
+        android:layout_height="43dp"
+        android:text="Remember me"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:id="@+id/forgot_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Edittext"
+        android:layout_alignBottom="@+id/Edittext"
+        android:layout_alignParentRight="true"
+        android:text="forgot password ?"
+        android:textColor="#0B3151"
+        tools:layout_editor_absoluteX="246dp"
+        tools:layout_editor_absoluteY="266dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="331dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="336dp"
+        android:background="#0B3151"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        style="@style/Widget.Material3.Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/outlinedTextField"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="or"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="193dp"
+        tools:layout_editor_absoluteY="431dp" />
+
+
+
+    <TextView
+        android:id="@+id/do_not_account"
+        android:layout_width="156dp"
+        android:layout_height="29dp"
+        android:text="Don't have an account ?"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <TextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="663dp" />
+
+    <TextView
+        android:id="@+id/googl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <TextView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Facebook"
+        android:textSize="15dp"
+        android:textColor="@color/black"
+        tools:layout_editor_absoluteX="290dp"
+        tools:layout_editor_absoluteY="575dp" />
+
+    <ImageButton
+        android:id="@+id/gg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/myshape"
+        app:srcCompat="@drawable/gg"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="505dp" />
+
+    <ImageButton
+        android:id="@+id/face"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:scaleType="fitCenter"
+        android:background="@drawable/myshape"
+        app:srcCompat="@drawable/ff"
+        tools:layout_editor_absoluteX="285dp"
+        tools:layout_editor_absoluteY="505dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
